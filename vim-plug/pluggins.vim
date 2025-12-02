@@ -17,4 +17,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'hrsh7th/cmp-path'
 	Plug 'L3MON4D3/LuaSnip'
 	Plug 'saadparwaiz1/cmp_luasnip'
+    Plug 'nvim-tree/nvim-web-devicons' " OPTIONAL: for file icons
+    Plug 'lewis6991/gitsigns.nvim' " OPTIONAL: for git status
+    Plug 'romgrk/barbar.nvim'
+    Plug 'nvim-lualine/lualine.nvim'
+    Plug 'nvim-tree/nvim-web-devicons'
 call plug#end()

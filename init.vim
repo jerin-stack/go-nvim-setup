@@ -12,8 +12,6 @@ EOF
 
 colorscheme catppuccin-mocha
 
-vim.opt.number = true 
-
 " ============================
 " Basic Config
 " ============================
@@ -108,3 +106,20 @@ lspconfig.gopls.setup({
 })
 EOF
 
+lua << EOF
+require('barbar').setup({
+  -- configuration goes here (optional)
+})
+EOF
+
+lua << END
+require('nvim-web-devicons').setup { default = true }
+require('lualine').setup {
+  options = {
+    icons_enabled = true,  -- enable icons
+    theme = 'auto',        -- or 'gruvbox', 'onedark', etc.
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
+  },
+}
+END
